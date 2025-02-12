@@ -27,9 +27,9 @@ export default function RootLayout({
       <head>
         <Script
           strategy="afterInteractive"
-          src="https://sdk.51.la/js-sdk-pro.min.js"
+          src="//sdk.51.la/js-sdk-pro.min.js"
           id="LA_COLLECT"
-          charset="UTF-8"
+          charSet="UTF-8"
         />
         <Script
           strategy="afterInteractive"
