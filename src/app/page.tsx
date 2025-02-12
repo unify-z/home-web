@@ -142,21 +142,16 @@ export default function Home() {
           </div>
         </div>
         <div className={styles("buttons")}>
-          <Button text="Blog" to="https://blog.marcus233.top/" />
-          <Button text="Gtihub" to="https://github.com/MarcusYYDS" primary />
-          <Button
-            text="Bilibili"
-            to="https://space.bilibili.com/1024450661"
-            primary
-          />
+          <Button text="Blog" to="https://blog.ifeng.asia/" />
+          <Button text="Gtihub" to="https://github.com/unify-z" primary />
         </div>
       </div>
       <footer className={styles("footer")}>
-        Copyright © 2022-2023 Marcus. All rights reserved.
+        Copyright © 2022-2023 unify-z. All rights reserved.
         <br />
         <div className={styles("footerAs")}>
         <a
-          href="https://github.com/MarcusYYDS/home-web"
+          href="https://github.com/unify-z/home-web"
           target="_blank"
           className={styles("footerA")}
           style={{ marginRight: "1rem"}}
@@ -164,11 +159,11 @@ export default function Home() {
           Theme: Home-web
         </a>
         <a
-          href="https://icp.gov.moe/?keyword=20230221"
+          href="https://beian.miit.gov.cn/"
           target="_blank"
           className={styles("footerA")}
           >
-          MoeICP: 20230221
+          闽ICP备2024070515号-3
         </a>
         </div>
       </footer>
