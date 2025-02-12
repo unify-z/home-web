@@ -23,11 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const handleLAOnLoad = () => {
-    if (typeof LA !== 'undefined') {
-      LA.init({id:"3LEhgRw88R4WHpfa", ck:"3LEhgRw88R4WHpfa"});
-    } else {
-      console.error("LA is not defined");
-    }
+      (window as any).LA.init({ id: "3LEhgRw88R4WHpfa", ck: "3LEhgRw88R4WHpfa" });
   };
 
   return (
