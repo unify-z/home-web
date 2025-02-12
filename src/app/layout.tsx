@@ -22,6 +22,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const handleLAOnLoad = () => {
+    if (typeof LA !== 'undefined') {
+      LA.init({id:"3LEhgRw88R4WHpfa", ck:"3LEhgRw88R4WHpfa"});
+    } else {
+      console.error("LA is not defined");
+    }
+  };
+
   return (
     <html lang="Zh-cn">
       <head>
@@ -30,13 +38,7 @@ export default function RootLayout({
           src="//sdk.51.la/js-sdk-pro.min.js"
           id="LA_COLLECT"
           charSet="UTF-8"
-        />
-        <Script
-          strategy="afterInteractive"
-          id="la-init"
-          dangerouslySetInnerHTML={{
-            __html: `LA.init({id:"3LEhgRw88R4WHpfa",ck:"3LEhgRw88R4WHpfa"})`,
-          }}
+          onLoad={handleLAOnLoad}
         />
       </head>
       <body className={styles("body")}>
