@@ -136,9 +136,7 @@ export default function Home() {
           <div className={`${styles("titleSmall")} title-small`}>
             A student
             <span className={styles("span")}> / </span>
-            web developer
-            <span className={styles("span")}> / </span>
-            vexer
+            A developer
           </div>
         </div>
         <div className={styles("buttons")}>
