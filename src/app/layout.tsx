@@ -25,9 +25,18 @@ export default function RootLayout({
   return (
     <html lang="Zh-cn">
       <head>
-        <Script 
-          strategy="afterInteractive" 
-          src="https://hm.baidu.com/hm.js?659151e588c30412fdd107ade9e217bc" 
+        <Script
+          strategy="afterInteractive"
+          src="https://sdk.51.la/js-sdk-pro.min.js"
+          id="LA_COLLECT"
+          charset="UTF-8"
+        />
+        <Script
+          strategy="afterInteractive"
+          id="la-init"
+          dangerouslySetInnerHTML={{
+            __html: `LA.init({id:"3LEhgRw88R4WHpfa",ck:"3LEhgRw88R4WHpfa"})`,
+          }}
         />
       </head>
       <body className={styles("body")}>
