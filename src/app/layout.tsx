@@ -12,7 +12,7 @@ const styles = style9.create({
 
 export const metadata: Metadata = {
   title: 'unify-z\'s Home Page',
-  description: 'A home page for Marcus',
+  description: 'A home page for unify-z',
   icons: '/favicon.ico',
 }
 
