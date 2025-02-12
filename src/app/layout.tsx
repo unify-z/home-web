@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import "./globals.css";
 import style9 from "style9";
 
@@ -11,8 +12,8 @@ const styles = style9.create({
 })
 
 export const metadata: Metadata = {
-  title: 'unify-z\'s Home Page',
-  description: 'A home page for unify-z',
+  title: "unify-z's Home Page",
+  description: "A home page for unify-z",
   icons: '/favicon.ico',
 }
 
@@ -23,7 +24,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="Zh-cn">
-      <body className={styles("body")} >{children}</body>
+      <head>
+        <Script 
+          strategy="afterInteractive" 
+          src="https://hm.baidu.com/hm.js?659151e588c30412fdd107ade9e217bc" 
+        />
+      </head>
+      <body className={styles("body")}>
+        {children}
+      </body>
     </html>
   )
 }
