@@ -131,7 +131,7 @@ export default function Home() {
           <div className={styles("titleBig")}>
             Hi👋,
             <br />
-            I'm <div className={`${styles("name")} name`}>Marcus</div>.
+            I'm <div className={`${styles("name")} name`}>unify-z</div>.
           </div>
           <div className={`${styles("titleSmall")} title-small`}>
             A student
