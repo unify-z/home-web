@@ -163,7 +163,8 @@ export default function Home() {
           >
           闽ICP备2024070515号-3
         </a>
-          <a href="https://beian.mps.gov.cn/#/query/webSearch?code=35018102240078" rel="noreferrer" target="_blank">闽公网安备35018102240078号</a>
+          <a href="https://beian.mps.gov.cn/#/query/webSearch?code=35018102240078" target="_blank"
+          className={styles("footerA")}>闽公网安备35018102240078号</a>
         </div>
       </footer>
     </>
