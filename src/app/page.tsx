@@ -160,6 +160,7 @@ export default function Home() {
           href="https://beian.miit.gov.cn/"
           target="_blank"
           className={styles("footerA")}
+          style={{ marginRight: "1rem"}}
           >
           闽ICP备2024070515号-3
         </a>
